@@ -54,7 +54,9 @@ var startsWith = function(fruits, letter) {
 
 // return a filtered array containing only cookie-type desserts.
 var cookiesOnly = function(desserts) {
-
+  return _.filter(desserts, function(dessert) {
+    return dessert.type === 'cookie';
+  });
 };
 
 /*
